@@ -4,7 +4,7 @@ A personal portfolio website built using HTML, CSS, and JavaScript to showcase m
 
 ## 🔗 Live Demo
 
-https://yourusername.github.io/Portfolio-Website/
+https://yourusername.github.io/Portfolio/
 
 ## ✨ Features
 
