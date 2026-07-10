@@ -172,3 +172,32 @@ window.addEventListener("scroll", () => {
     });
 
 });
+// Contact Form Submission
+const contactForm = document.getElementById('contactForm');
+const formStatus = document.getElementById('formStatus');
+
+contactForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(contactForm);
+
+  fetch('https://formspree.io/f/mrewnpvv', {
+    method: 'POST',
+    body: formData,
+    headers: { 'Accept': 'application/json' }
+  })
+  .then(response => {
+    if (response.ok) {
+      formStatus.textContent = "✅ Message sent! I'll get back to you soon.";
+      formStatus.style.color = "green";
+      contactForm.reset();
+    } else {
+      formStatus.textContent = "❌ Something went wrong. Please try again.";
+      formStatus.style.color = "red";
+    }
+  })
+  .catch(() => {
+    formStatus.textContent = "❌ Network error. Please try again.";
+    formStatus.style.color = "red";
+  });
+});

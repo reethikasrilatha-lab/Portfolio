@@ -43,7 +43,7 @@
             HTML, CSS and JavaScript.
         </p>
 
-        <a href="resume.pdf" class="btn" download>Download Resume</a>
+        <a href="Resume.pdf" class="btn" download>Download Resume</a>
 
         <div class="social-icons">
 
@@ -51,8 +51,6 @@
                 <i class="fab fa-github"></i>
             </a>
 
-            <a href="https://linkedin.com/in/YourLinkedInUsername">
-                <i class="fab fa-linkedin"></i>
             </a>
 
             <a href="mailto:reethikasrilatha@gmail.com">
@@ -111,13 +109,6 @@
 
     <a href=https://reethikasrilatha-lab.github.io/Expense-Tracker/ target="_blank">Live Demo</a>
 </div>
-<h3>Portfolio Website</h3>
-
-<p>Personal portfolio built using HTML, CSS and JavaScript.</p>
-
-<a href="#">Live Demo</a>
-
-<a href="#">GitHub</a>
 
 </div>
 
@@ -182,15 +173,12 @@
 
 <h2>Contact Me</h2>
 
-<form>
-
-<input type="text" placeholder="Your Name" required>
-
-<input type="email" placeholder="Your Email" required>
-
-<textarea placeholder="Your Message"></textarea>
-
-<button type="submit">Send Message</button>
+<form id="contactForm">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+  <p id="formStatus"></p>
 
 </form>
 
